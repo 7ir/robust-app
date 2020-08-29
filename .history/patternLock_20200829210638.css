@@ -1,0 +1,94 @@
+
+/* Custom patternlock css */
+.main-wrap {
+	width:100%;
+	height:100%;
+}
+
+#layer-1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.layer-2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.layer-2-icon {
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+
+#layer-1-icon-id-1, #layer-1-icon-id-2, #layer-1-icon-id-3, #layer-1-icon-id-4 {
+	margin: 10%;
+	width: 20%;
+	height: 20%;
+	float: left;
+	position: relative;
+	background: gold;
+}
+
+#patternHolder {
+	position: absolute;
+}
+/* Custom patternlock css end */
+
+
+
+/*
+	patternLock.js v 1.0.1
+	Author: Sudhanshu Yadav
+	Copyright (c) 2016 Sudhanshu Yadav - ignitersworld.com , released under the MIT license.
+	Demo and documentaion on: ignitersworld.com/lab/patternLock.html
+*/
+
+.patt-holder{/* background:#3382c0; */  -ms-touch-action: none;}
+.patt-wrap{position:relative; cursor:pointer;}
+.patt-wrap ul, .patt-wrap li{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+.patt-circ{
+	position:relative;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ }
+.patt-circ.hovered{
+	/*border:30% solid white;*/
+}
+
+.patt-error .patt-circ.hovered{
+	border:10px solid #BA1B26;
+}
+
+.patt-hidden .patt-circ.hovered{border:0;}
+
+.patt-dots{
+	background: none;
+	width: 0px;height: 0px;
+	border-radius:10px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-5px;
+	margin-left:-5px;
+}
+.patt-lines{
+	border-radius:10px;
+	height:30px;
+	background:rgba(255,255,255,1);
+	position:absolute;
+	transform-origin:5px 5px;
+	-ms-transform-origin:5px 5px; /* IE 9 */
+	-webkit-transform-origin:5px 5px;
+}
+
+.patt-hidden .patt-lines{
+	display:none;
+}
