@@ -1,0 +1,337 @@
+
+* {	
+	font-family: 'helvetica', sans-serif;
+	margin:0;
+	backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+	min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+	color:whitesmoke;
+}
+
+.p {
+padding: 0px 0px 20px 0px;
+position: relative;
+background:#000;
+font-weight: lighter;
+color: whitesmoke;
+font-size: 1rem;
+text-align: center;
+}
+
+.main {
+	background: #111;
+    height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+.view-wrap {
+    width: 100vh;
+    height: 100%;
+	left: 50%; 
+	-ms-transform: translate(-50%); /* IE 9 */
+	-webkit-transform: translate(-50%); /* Safari */
+	transform: translate(-50%);
+    position: fixed;
+}
+
+.content-wrap {
+	padding: 10%;
+	width: 80%;
+	height: 80%;
+}
+    
+/* Mobile and desktop view toggle dynamics */
+@media (max-width: 1280px) {
+	.sidebar {
+		display: none;
+	}	
+}
+
+@media (max-width: 940px) {
+	#view-wrap-id {
+        width: 100%;
+    }
+}
+
+
+
+.sidebar {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background: #555;
+	z-index: 999;
+	box-shadow: 0px 0px 50px #222;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;	
+}
+
+.sidebar-row-1 {
+	height: 54px;
+	width: 100%;
+	background:#666;
+	box-shadow: 0px -10px 20px #111;
+	/* border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: gray; */
+}
+
+/* .sidebar-row-1-wrap {
+	vertical-align: baseline;
+} */
+
+.sidebar-text {
+	margin: 0;
+	width: 160px;
+	text-align: left;
+	float: left;  
+	vertical-align: baseline;
+	color: white;
+	margin: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+	pointer-events: none;
+}
+
+.sidebar-row-1-wrap {
+	padding: 20px;
+}
+
+
+
+/* Sub-views */
+#view__start {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+}
+
+.view {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	background-size: 100% 100%;
+	background: #222;
+}
+
+.rotated-text {
+	position: absolute;
+	background:#000;
+	padding: 2%;
+	color: #888;
+	font-weight: lighter;
+	font-size: 0.5rem;
+	top:20%;
+	left: 80%;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+
+.title {
+	padding: 20px;
+	position: relative;
+	background:#000;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.footer-fixed {
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.footer-fixed-btn {
+	position: absolute;
+	top: 90vh;
+	height: 10vh;
+	width: 100%;
+	z-index: 999;
+	background: #333;
+	box-shadow: 0px 10px 20px #111;
+}
+
+.button-footer {
+	margin: 2%;
+	width: 96%;
+	height: 6vh;
+	background: #000;
+	border: none;
+	color: whitesmoke;
+	border-radius: 50px;
+	font-size: 1rem;
+}
+
+#button-footer-2 {
+	float: left;
+	width: 96%;
+	margin: 2% 0 0 2%;
+	height: 100px;
+	position: relative;
+	background: #000;
+	border-radius: 20vh;
+}
+
+#button-footer-2:disabled {
+	background: #222;
+	color: #999;
+}
+
+
+/* x View, Map */
+#view__map {
+	background: #333;
+}
+
+.quiz-svg {
+	width: 100%;
+	height: 100%;
+}
+
+/* x.1 Grid system */
+.container {
+ width: 100%;
+ height: 100%;
+}
+/* 
+.column {
+	width: 32%;
+	height: auto;
+} */
+
+/* .card-body {
+	width: 100%;
+	height: 100%;
+	background: darkslategray;
+} */
+
+.card__quiz {
+	float: left;
+	width: 47%;
+	margin: 2% 0 0 2%;
+	height: 100px;
+	position: relative;
+	background: #000;
+	border-radius: 20vh;
+}
+
+
+.map-number {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.map-award {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px;
+}
+
+/* Back Button */
+.back-btn {
+	float: right;
+	top: 86%;
+	margin: 2% 0 0 2%;
+	position: relative;
+	background: #000;
+	z-index: 999;
+	border-radius: 20vh;
+	color:whitesmoke;
+}
+/* 
+.back-btn-svg {
+	width: 18px;
+	height: 18px;
+	vertical-align: baseline;
+} */
+
+/* Tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+  
+table, td, th {
+	background: whitesmoke;
+	border: 1px solid whitesmoke;
+	color:#222;
+	padding: 10% 0%;
+}
+  
+th {text-align: left;}
+
+
+.container-flex {
+	display: flex;
+	width: 80%;
+	height: 20vh;
+}
+
+.math {
+	background: #000;
+	width: 50%;
+	height: 100%;
+	color: #999;
+	float: right;
+	padding: 4%;
+	font-size: 2rem;
+	z-index: 999;
+}
+
+#math-answer-input {
+	padding: 5%;
+	width: 40%;
+	height: 10%;
+	position: relative;
+	background: whitesmoke;
+}
+
+
+#quiz-4-btn {
+	width: 100%;
+}
+
+
+
+/* Scrollbars and browser specific */
+-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
