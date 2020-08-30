@@ -1,0 +1,294 @@
+
+* {	
+	font-family: 'helvetica', sans-serif;
+	/*font-family: "M";
+	font-weight:550;
+	font-size:103%;
+	color:whitesmoke;
+	margin:0;
+	-webkit-backface-visibility: hidden;*/
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+	min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.main {
+	background: #111;
+    height: 100%;
+	min-height: 100%;
+	width: 100%;/* 
+	-webkit-backface-visibility: hidden; */
+}
+
+.view-wrap {
+    width: 100vh;
+    height: 100%;
+	left: 50%; 
+	-ms-transform: translate(-50%); /* IE 9 */
+	-webkit-transform: translate(-50%); /* Safari */
+	transform: translate(-50%);
+    position: fixed;
+	-webkit-backface-visibility: hidden;
+}
+    
+/* Mobile and desktop view toggle dynamics */
+@media (max-width: 1280px) {
+	.sidebar {
+		display: none;
+	}	
+}
+
+@media (max-width: 940px) {
+	#view-wrap-id {
+        width: 100%;
+    }
+}
+
+
+
+.sidebar {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background: #555;
+	z-index: 999;
+	box-shadow: 0px 0px 50px #222;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;	
+}
+
+.sidebar-row-1 {
+	height: 54px;
+	width: 100%;
+	background:#666;
+	box-shadow: 0px -10px 20px #111;
+	/* border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: gray; */
+}
+
+/* .sidebar-row-1-wrap {
+	vertical-align: baseline;
+} */
+
+.sidebar-text {
+	margin: 0;
+	width: 160px;
+	text-align: left;
+	float: left;  
+	vertical-align: baseline;
+	color: white;
+	margin: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+	pointer-events: none;
+}
+
+.sidebar-row-1-wrap {
+	padding: 20px;
+}
+
+
+
+/* Sub-views */
+#view__start {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #222;
+}
+
+.view {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	background-size: 100% 100%;
+	background: #222;
+}
+
+.title {
+	position: absolute;
+/* 	background:#000; */
+	color: whitesmoke;
+	font-weight: normal;
+	font-size: 22px;
+	top:20%;
+	left: 80%;
+	/* -webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+
+.footer-fixed {
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.footer-fixed-btn {
+	position: absolute;
+	top: 90vh;
+	height: 10vh;
+	width: 100%;
+	z-index: 999;
+	background: #333;
+	box-shadow: 0px 10px 20px #111;
+}
+
+.button-footer {
+	margin: 2vh 2%;
+	width: 96%;
+	height: 6vh;
+	background: #000;
+	border: none;
+	color: whitesmoke;
+	border-radius: 50px;
+	font-size: 1rem;
+}
+
+
+/* x View, Map */
+#view__map {
+	background: #333;
+}
+
+.quiz-svg {
+	width: 100%;
+	height: 100%;
+}
+
+/* x.1 Grid system */
+.container {
+ width: 100%;
+ height: 100%;
+}
+/* 
+.column {
+	width: 32%;
+	height: auto;
+} */
+
+/* .card-body {
+	width: 100%;
+	height: 100%;
+	background: darkslategray;
+} */
+
+.card__quiz {
+	float: left;
+	width: 47%;
+	margin: 2% 0 0 2%;
+	height: 100px;
+	position: relative;
+	background: #000;
+	border-radius: 20vh;
+}
+
+.card__award {
+	float: right;
+	padding: 22px 32px 22px 25px;
+	background: #000;
+	z-index: 999;
+	border-radius: 20vh;
+	color:whitesmoke;
+}
+
+.map-number {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.map-award {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px;
+}
+
+/* Back Button */
+.back-btn {
+	float: right;
+	top: 86%;
+	padding: 22px 32px 22px 25px;
+	position: relative;
+	background: #000;
+	z-index: 999;
+	border-radius: 20vh;
+	color:whitesmoke;
+}
+
+.back-btn-svg {
+	width: 18px;
+	height: 18px;
+	vertical-align: baseline;
+}
+
+/* 
+.triangle1{
+	width:60%;
+	height:60%;
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index:999;
+}
+ */
+
+
+/* Tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+  
+table, td, th {
+	border: 1px solid whitesmoke;
+	color:white;
+	padding: 5px;
+}
+  
+th {text-align: left;}
+
+
+
+
+
+
+
+/* Scrollbars and browser specific */
+-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
