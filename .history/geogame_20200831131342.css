@@ -1,0 +1,191 @@
+
+
+.wrap {
+    display: table-row-group;
+    position: relative;
+}
+
+.drag-car {
+	position: absolute;
+	width: 20%;
+	height: auto; 
+	float: left;
+	z-index: 998;
+}
+
+.drag { 
+    height: 100%;
+    width: 100%;
+    float: left; 
+    z-index: 939;
+}
+
+.quiz-svg {
+	width: 100%;
+	height: 100%;
+}
+
+.quiz-svg-2 {
+    display: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* #drag {
+    background: gold;
+    width:25vh;
+    height:18vh;
+    z-index:912;
+} */
+
+/* .quiz-img {
+	padding:1%;
+	width:98%;
+	height:auto;
+	background:#344b00;
+	padding-bottom:5%;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	webkit-pointer-events: none;
+	webkit-touch-action: none;
+	pointer-events: none;
+	touch-action: none;
+} */
+
+
+.answer-box {
+    display: none;;
+    width:100%;
+    height:100%;
+	z-index:999;
+}
+
+
+
+#drag-car-id-1 {
+    -webkit-animation: animal1 19s linear infinite;
+}#drag-car-id-2 {
+    -webkit-animation: animal2 22s linear infinite;
+}#drag-car-id-3 {
+    -webkit-animation: animal3 17s linear infinite;
+}#drag-car-id-4 {
+    -webkit-animation: animal4 19s linear infinite;
+}
+/* #dragc5 {
+    -webkit-animation: progress-bar4 9s linear infinite;
+}#dragc6 {
+    -webkit-animation: progress-bar1 16s linear infinite;
+}#dragc7 {
+    -webkit-animation: progress-bar2 4s linear infinite;
+}#dragc8 {
+    -webkit-animation: progress-bar4 13s linear infinite;
+}#dragc9,#dragc911 {
+    -webkit-animation: animal1 10s linear infinite;
+}#dragc10,#dragc1011 {
+    -webkit-animation: animal3 19s linear infinite;
+}#dragc11,#dragc1111 {
+    -webkit-animation: animal2 11s linear infinite;
+}#dragc12,#dragc1211 {
+    -webkit-animation: animal4 29s linear infinite;
+}
+ */
+
+ @-webkit-keyframes animal1 {
+    0%  {top: 14%; left:0%;}
+    50% {top: 14%; left:70%;}
+    100%{top: 14%; left:0%;}
+ }
+ @-webkit-keyframes animal2 {
+    0%  {top: 60%; left:70%;}
+    50% {top: 60%; left:0%; }
+    100%{top: 60%; left:70%;}
+ }
+ @-webkit-keyframes animal3 {
+    0%  {top: 50%; left:0%;}
+    50% {top: 17%; left:0%; }
+    100%{top: 50%; left:0%;}
+ }
+ @-webkit-keyframes animal4 {
+    0%  {top: 50%; left:70%;}
+    50% {top: 17%; left:70%; }
+    100%{top: 50%; left:70%;}
+ }
+ /* 
+@-webkit-keyframes progress-bar1 {
+    0% {top: 35%;left:66%; }
+    12% {top: 50%; left:56%;}
+    24% {top: 60%;left:33%; }
+    36% {top: 50%; left:5%;}
+    49% {top: 35%; left:0%; }
+    62%{top: 20%; left:10%;}
+    74% {top: 10%; left:33%; }
+    86% {top: 20%; left:56%; }
+    100%  {top: 35%; left:66%;}
+ }
+ @-webkit-keyframes progress-bar2 {
+    0% {top: 60%;left:33%; }
+    12% {top: 50%; left:5%;}
+    24% {top: 35%; left:0%; }
+    36% {top: 20%; left:10%;}
+    49% {top: 10%; left:33%; }
+    62% {top: 20%; left:56%; }
+    74% {top: 35%;left:66%; }
+    86% {top: 50%; left:56%;}
+    100%  {top: 60%; left:33%;}
+ }
+ @-webkit-keyframes progress-bar3 {
+    0% {top: 35%; left:0%; }
+    12%{top: 20%; left:10%;}
+    24% {top: 10%; left:33%; }
+    36% {top: 20%; left:56%; }
+    49% {top: 35%;left:66%; }
+    62% {top: 50%; left:56%;}
+    74% {top: 60%;left:33%; }
+    86% {top: 50%; left:5%;}
+    100%  {top: 35%; left:0%;}
+ }
+ @-webkit-keyframes progress-bar4 {
+    0%  {top: 20%; left:10%;}
+    12% {top: 10%; left:33%; }
+    24% {top: 20%; left:56%; }
+    36% {top: 35%;left:66%; }
+    49% {top: 50%; left:56%;}
+    62% {top: 60%;left:33%; }
+    74% {top: 50%; left:5%;}
+    86% {top: 35%; left:0%; }
+    100%{top: 20%; left:10%;}
+ } */
+
+
+
+
+ #drop1,#drop2,#drop3 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:180px;
+    height:180px;
+    z-index:912;
+}
+
+#drop4 {
+    background: gray;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:180px;
+    height:180px;
+    z-index:912;
+}
+
+
