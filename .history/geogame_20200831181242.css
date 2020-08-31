@@ -1,0 +1,126 @@
+
+
+.wrap {
+    display: table-row-group;
+    position: relative;
+}
+
+.drag-car {
+	position: absolute;
+	width: 20%;
+	height: auto; 
+	float: left;
+	z-index: 998;
+}
+
+.drag { 
+    height: 100%;
+    width: 100%;
+    float: left; 
+    z-index: 939;
+}
+
+
+.quiz-svg {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* #drag {
+    background: gold;
+    width:25vh;
+    height:18vh;
+    z-index:912;
+} */
+
+/* .quiz-img {
+	padding:1%;
+	width:98%;
+	height:auto;
+	background:#344b00;
+	padding-bottom:5%;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	webkit-pointer-events: none;
+	webkit-touch-action: none;
+	pointer-events: none;
+	touch-action: none;
+} */
+
+
+.answer-box {
+    display: none;;
+    width:100%;
+    height:100%;
+	z-index:999;
+}
+
+
+
+#drag-car-id-1 {
+    -webkit-animation: animal1 19s linear infinite;
+}#drag-car-id-2 {
+    -webkit-animation: animal2 22s linear infinite;
+}#drag-car-id-3 {
+    -webkit-animation: animal3 17s linear infinite;
+}#drag-car-id-4 {
+    -webkit-animation: animal4 19s linear infinite;
+}
+
+
+ @-webkit-keyframes animal1 {
+    0%  {top: 14%; left:0%;}
+    50% {top: 14%; left:70%;}
+    100%{top: 14%; left:0%;}
+ }
+ @-webkit-keyframes animal2 {
+    0%  {top: 60%; left:70%;}
+    50% {top: 60%; left:0%; }
+    100%{top: 60%; left:70%;}
+ }
+ @-webkit-keyframes animal3 {
+    0%  {top: 50%; left:0%;}
+    50% {top: 17%; left:0%; }
+    100%{top: 50%; left:0%;}
+ }
+ @-webkit-keyframes animal4 {
+    0%  {top: 50%; left:70%;}
+    50% {top: 17%; left:70%; }
+    100%{top: 50%; left:70%;}
+ }
+
+
+
+
+
+ #drop1,#drop2,#drop3 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:180px;
+    height:180px;
+    z-index:912;
+}
+
+#drop4 {
+    background: gray;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width:180px;
+    height:180px;
+    z-index:912;
+}
+
+
