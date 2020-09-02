@@ -34,9 +34,9 @@ function mobileNavCollapse() {
 }
 
 
-var isLightMode = false;
+var key3 = false;
 function switchViewMode() {
-    isLightMode = true;
+    key3 = true;
     var checkBox = document.getElementById("my-check");
     if (checkBox.checked == true){
         console.log('light mode')
@@ -406,13 +406,6 @@ function Check2() {
     console.log(awardKey);
 	if (awardKey ===  4){
     // variable is equal to 4
-    if(isLightMode === true) {
-        console.log('lightmode is true')
-        document.querySelectorAll('#button-footer-2').forEach(el => {
-            el.style.background = "white";
-            el.style.color = "#222";
-        })
-    }
     document.getElementById("button-footer-2").disabled = false;
 	}
 }

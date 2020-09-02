@@ -408,6 +408,7 @@ function Check2() {
     // variable is equal to 4
     if(isLightMode === true) {
         console.log('lightmode is true')
+
         document.querySelectorAll('#button-footer-2').forEach(el => {
             el.style.background = "white";
             el.style.color = "#222";
