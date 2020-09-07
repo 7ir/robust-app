@@ -1,0 +1,432 @@
+
+* {	
+	font-family: 'helvetica', sans-serif;
+	margin:0;
+	backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+	min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Typo */
+p {
+	text-align: center;
+	color: lightgray;
+	font-weight: lighter;
+}
+
+.rotated-text {
+	position: absolute;
+	background:#000;
+	padding: 2%;
+	color: #888;
+	font-weight: lighter;
+	font-size: 0.5rem;
+	top:20%;
+	left: 80%;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+}
+
+.title {
+	padding: 20px;
+	position: relative;
+	background:#000;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.title-nav {
+	padding: 20px;
+	position: relative;
+	background:#000;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.title-intro {
+	left: 50%;
+	transform: translate(-50%);
+	top: 45%;
+	padding: 20px;
+	background:#000;
+	position: absolute;
+	color: whitesmoke;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 2rem;
+	text-align: center;
+}
+
+
+.main {
+	background: #111;
+    height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+.sidebar {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	background: #555;
+	z-index: 999;
+	box-shadow: 0px 0px 50px #222;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;	
+}
+
+.sidebar-row-1 {
+	height: 54px;
+	width: 100%;
+	background:#666;
+	box-shadow: 0px -10px 20px #111;
+}
+
+.sidebar-text {
+	margin: 0;
+	width: 160px;
+	text-align: left;
+	float: left;  
+	vertical-align: baseline;
+	color: white;
+	margin: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+	pointer-events: none;
+}
+
+.sidebar-row-1-wrap {
+	padding: 20px;
+}
+
+/* Dynamics */
+@media (max-width: 1280px) {
+	.sidebar {
+		display: none;
+	}	
+}
+
+@media (max-width: 940px) {
+	#view-wrap-id {
+        width: 100%;
+	}
+	div.content-wrap {
+		padding: 5% 0 0 0;
+		width: 100%;
+		height: 100%;
+	}
+	#math-quiz-btn {
+		width: 100%;
+		left: 0%;
+		transform: translate(0%);
+	}
+	.title {
+		display: none;
+	}
+}
+
+@media (min-width: 940px) {
+	.mobile-nav {
+		display: none;
+	}
+}
+
+@media (max-height: 540px) {
+	html {
+		overflow: scroll;
+		overflow-x: scroll;
+	}
+	html, body {
+		overflow: scroll;
+	}
+}
+
+.mobile-nav {
+	left: 100%;
+	transform: translate(-100px,-100%);
+	background: gold;
+	width: 100px;
+	height: 100px;
+	z-index: 999;
+	position: absolute;
+}
+
+.sidebar-blur {
+	display: none;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 300px;
+	z-index: 999;
+	background: rgba(100,100,100,.1);
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;	
+}
+
+
+/* Content area */
+.view-wrap {
+    width: 100vh;
+    height: 100%;
+	left: 50%; 
+	-ms-transform: translate(-50%); /* IE 9 */
+	-webkit-transform: translate(-50%); /* Safari */
+	transform: translate(-50%);
+    position: fixed;
+}
+
+.content-wrap {
+	padding: 10%;
+	width: 80%;
+	height: 80%;
+}
+    
+
+
+
+
+/* Sub-views */
+#view__start {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #222;
+}
+
+.view {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	background: #222;
+}
+
+.invert {
+	display:none;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	pointer-events: none;
+	z-index: 999;
+	backdrop-filter: invert(100%);
+	-webkit-backdrop-filter: invert(100%);
+}
+
+
+/* Back Button */
+.footer-fixed {
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.footer-fixed-btn {
+	position: absolute;
+	top: 90vh;
+	height: 10vh;
+	width: 100%;
+	z-index: 999;
+	background: #333;
+	box-shadow: 0px 10px 20px #111;
+}
+
+.button-footer {
+	margin: 2%;
+	width: 96%;
+	height: 6vh;
+	background: #000;
+	border: 0;
+	color: whitesmoke;
+	border-radius: 50px;
+	font-size: 1rem;
+}
+
+
+/* Other buttons */
+#button-footer-2 {
+	float: left;
+	width: 96%;
+	margin: 2% 0 0 2%;
+	height: 100px;
+	border: 0;
+	color: white;
+	position: relative;
+	background: #000;
+	border-radius: 50vh;
+	font-size: 1rem;
+}
+
+#button-footer-2:disabled {
+	background: #222;
+	color: #999;
+}
+
+
+/* Nav */
+#view__map {
+	background: #333;
+}
+
+.container-nav {
+	width: 100%;
+	height: 100%;
+}
+
+.card__quiz {
+	float: left;
+	width: 47%;
+	margin: 2% 0 0 2%;
+	height: 100px;
+	background: black;
+	position: relative;
+	border-radius: 20vh;
+}
+
+.map-number {
+	text-align: center;
+	color: whitesmoke;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+
+
+
+
+/* Table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+  
+table, td, th {
+	color:#222;
+	padding: 10% 2%;
+}
+
+table {
+	background: whitesmoke;
+}
+  
+th {text-align: left;}
+
+.tr-1 {
+	background: #f0f0f0;
+} 
+
+.container-flex__db {
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+}
+
+.selector {
+	font-size: 1em;
+}
+
+#txtHint {
+	margin-top: 5vh;
+}
+
+
+
+
+/* Math */
+.content-flex {
+	display: flex;
+	width: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	position: relative;
+	margin-bottom: 5vh;
+}
+
+.math {
+	width: 66%;
+	height: 1em;
+	padding: 5%;
+	font-size: 1em;
+	font-weight: bold;
+	background: #000;
+	color: whitesmoke;
+	text-align: center;
+}
+
+#math-answer-input {
+	width: 33%;
+	height: 1em;
+	padding: 5%;
+	font-size: 1em;
+	background: whitesmoke;
+	text-align: center; 
+	border: 0;
+}
+#math-answer-input:disabled {
+	color: #222;
+	background: gray;
+}
+
+
+#math-quiz-btn {
+	position: relative;
+	margin: 0%;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	top: 50%;
+	font-weight: bold;
+	color: black;
+	background: whitesmoke;
+}
+#math-quiz-btn:disabled {
+	color: #222;
+	background: gray;
+}
+
+
+
+
+/* Scrollbars and browser specific */
+-webkit-scrollbar {
+   width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
