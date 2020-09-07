@@ -281,7 +281,7 @@ p {
 /* Other buttons */
 #button-footer-2 {
 	width: 96%;
-	margin: 2%;
+	margin: 2% 0 0 2%;
 	height: 100px;
 	border: 0;
 	color: white;
@@ -293,7 +293,7 @@ p {
 
 #button-footer-2:disabled {
 	background: #111;
-	color: #777;
+	color: #999;
 }
 
 

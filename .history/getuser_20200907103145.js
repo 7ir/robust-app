@@ -28,4 +28,4 @@ function showUser(str) {
     setTimeout(function () {
         $('#yes').hide();
     },500);
-}
+};

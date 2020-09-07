@@ -198,7 +198,7 @@ function switchViewMode() {
         })
         document.querySelectorAll('#button-footer-2:disabled').forEach(el => {
             el.style.background = "#111";
-            el.style.color = "#777";
+            el.style.color = "#999";
         })      
         document.querySelectorAll('.card__quiz').forEach(el => {
             el.style.background = "black";
@@ -371,16 +371,10 @@ function Check2() {
 	if (awardKey ===  4){
     // variable is equal to 4
     if(isLightMode === true) {
-        console.log('test success: lightmode is true')
+        console.log('lightmode is true')
         document.querySelectorAll('#button-footer-2').forEach(el => {
             el.style.background = "white";
             el.style.color = "#222";
-        })
-    } else {
-        console.log('test success: lightmode is false')
-        document.querySelectorAll('#button-footer-2').forEach(el => {
-            el.style.background = "#000";
-            el.style.color = "white";
         })
     }
     document.getElementById("button-footer-2").disabled = false;

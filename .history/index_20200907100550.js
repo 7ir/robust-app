@@ -38,6 +38,8 @@ var isLightMode = false;
 function switchViewMode() {
     var checkBox = document.getElementById("my-check");
     if (checkBox.checked == true){
+        console.log('light mode')
+        isLightMode = true;
         document.getElementById("main-id").style.background = "whitesmoke";
         document.querySelectorAll('p').forEach(el => {
             el.style.color = "black";
@@ -148,10 +150,9 @@ function switchViewMode() {
         document.querySelectorAll('.tr-1').forEach(el => {
             el.style.background = "#333";
         }) 
-        isLightMode = true;
-        console.log(isLightMode)
-        console.log('light mode')
     } else {
+        console.log('dark mode')
+        isLightMode = false;
         document.getElementById("main-id").style.background = "#111";
         document.querySelectorAll('p').forEach(el => {
             el.style.color = "lightgray";
@@ -197,8 +198,8 @@ function switchViewMode() {
             el.style.color = "white";
         })
         document.querySelectorAll('#button-footer-2:disabled').forEach(el => {
-            el.style.background = "#111";
-            el.style.color = "#777";
+            el.style.background = "#222";
+            el.style.color = "#999";
         })      
         document.querySelectorAll('.card__quiz').forEach(el => {
             el.style.background = "black";
@@ -259,9 +260,6 @@ function switchViewMode() {
         document.querySelectorAll('.tr-1').forEach(el => {
             el.style.background = "#f0f0f0";
         })
-        isLightMode = false;
-        console.log(isLightMode)
-        console.log('dark mode');
     }
 };
 
@@ -371,16 +369,10 @@ function Check2() {
 	if (awardKey ===  4){
     // variable is equal to 4
     if(isLightMode === true) {
-        console.log('test success: lightmode is true')
+        console.log('lightmode is true')
         document.querySelectorAll('#button-footer-2').forEach(el => {
             el.style.background = "white";
             el.style.color = "#222";
-        })
-    } else {
-        console.log('test success: lightmode is false')
-        document.querySelectorAll('#button-footer-2').forEach(el => {
-            el.style.background = "#000";
-            el.style.color = "white";
         })
     }
     document.getElementById("button-footer-2").disabled = false;

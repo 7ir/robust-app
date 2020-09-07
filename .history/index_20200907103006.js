@@ -379,7 +379,7 @@ function Check2() {
     } else {
         console.log('test success: lightmode is false')
         document.querySelectorAll('#button-footer-2').forEach(el => {
-            el.style.background = "#000";
+            el.style.background = "000";
             el.style.color = "white";
         })
     }
